@@ -1,0 +1,55 @@
+.post {
+    margin: 5em 0;
+}
+.post article {
+    border: 2px solid #34391b;
+    padding: 2em;
+}
+.content p {
+    margin: 1em 0;
+}
+.content img {
+    width: 100%;
+}
+.content figure {
+    margin: 0;
+}
+.postTitle {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 5em 0;
+    text-align: center;
+    color: #fff;
+
+    min-height: 300px;
+    position: relative;
+}
+.postTitleLayer {
+    background-color: #34391b3d;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+.postTitleContent {
+    position: absolute;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+.shareButtons {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 2em;
+}
+.shareButtons button + button {
+    margin-left: 1em;
+}

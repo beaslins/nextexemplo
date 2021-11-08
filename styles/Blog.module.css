@@ -1,0 +1,23 @@
+.blog {
+    margin: 5em 0;
+}
+.blog h1 {
+    font-size: 40px;
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.posts {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+}
+.posts .post {
+    width: 100% !important;
+}
+
+@media screen and (max-width: 600px) {
+    .posts {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,13 @@
+.title {
+    font-family: 'Epilogue', sans-serif;
+    font-size: 23px;
+    margin: 0.5em 0;
+}
+.link {
+    text-decoration: underline;
+    margin-top: 0.6em;
+    display: block;
+}
+.pointer {
+    cursor: pointer;
+}

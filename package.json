@@ -1,0 +1,22 @@
+{
+  "name": "wunjo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && next export",
+    "serve": "pm2 start start.js --wunjo",
+    "stop": "pm2 stop start.js ",
+    "start": "next start"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "next": "10.0.7",
+    "next-absolute-url": "^1.2.2",
+    "nodemailer": "^6.6.3",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-icons": "^4.2.0",
+    "react-share": "^4.4.0"
+  }
+}

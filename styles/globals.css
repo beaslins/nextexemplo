@@ -1,0 +1,388 @@
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input, select, textarea, button {
+  border: none;
+  font-family: 'Jost', sans-serif;
+}
+
+*:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+body {
+  background: #fff;
+  font-family: 'Lora', serif;
+  color: #34391b;
+
+  font-size: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+a.underlineEffect::after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #e0edc1;
+  transition: 300ms;
+}
+a.underlineEffect:hover::after {
+  width: 100%;
+}
+div.bt-circle {
+  background-image: url(/images/btbgverde.svg);
+  background-position: center;
+  background-size: contain;
+  width: 200px;
+  height: 50px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header */
+header {
+  background: #fff;
+}
+header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding: 1.5em 0;
+}
+a.logo img {
+  width: 200px;
+}
+div.social svg.icon, div.contact svg.icon {
+  width: 25px;
+  height: 25px;
+
+  display: inline-block;
+}
+div.social svg.icon + svg.icon {
+  margin-left: 1.5em;
+}
+div.contact svg.icon {
+  margin-left: 1.5em;
+}
+
+nav.top-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #34391b;
+  padding: 1em 0;
+}
+nav.top-menu a {
+  color: #fff;
+  transition: all 0.3s ease-in;
+  font-size: 23px;
+}
+nav.top-menu a:hover, nav.top-menu a.active {
+  color:#e0edc1;
+  border-bottom: 1px solid #e0edc1;
+}
+
+nav.top-menu a + a {
+  margin-left: 3em;
+}
+.menu-toggle {
+  display: none;
+}
+/* End Header */
+
+/* Footer */
+.dark-green {
+  background-color: #34391b;
+}
+footer {
+  background: #e0edc1;
+}
+footer .flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer div.footer-informations {
+  color: #34391b;
+  padding: 2em 0;
+}
+footer div.footer-informations div.flex {
+  align-items: flex-start;
+}
+footer div.footer-informations h3 {
+  margin-bottom: 0.5em;
+  font-family: 'Epilogue', sans-serif;
+}
+
+footer div.footer-logo img {
+  width: 250px;
+}
+
+.footer-menu a, .footer-blog a, .footer-services a {
+  display: block;
+}
+.footer-menu a.underlineEffect::after, .footer-blog a.underlineEffect::after, .footer-services a.underlineEffect::after {
+  background: #34391b;
+}
+.footer-menu a + a, .footer-blog a + a, .footer-services a + a {
+  margin-top: 0.5em;
+}
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social .icon {
+  color:  #34391b;
+  width: 25px;
+  height: 25px;
+
+  display: inline-block;
+  margin-bottom: 1em;
+}
+.footer-social .icon + .icon {
+  margin-left: 0.5em;
+}
+.footer-social {
+  margin-top: 1em;
+}
+
+footer div.copy {
+  color:  #e0edc1;
+  font-weight: 400;
+  padding: 1em 0;
+  text-align: right;
+}
+footer div.copy a {
+  margin-left: 0.3em;
+  display: inline-block;
+}
+a.btnWhats {
+  color: #e0edc1;
+  box-shadow: -3px 3px 11px rgb(41 59 95 / 25%);
+  border-radius: 2em 0 2em 2em;
+  padding: 1em 1.5em;
+  font-weight: 600;
+  background: #34391b;
+  transition: background .4s ease-in,color .4s ease-in;
+  margin-top: 2em;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+a.btnWhats span {
+  display: inline-block;
+  padding-left: 0.5em;
+}
+a.btnWhats svg {
+  width: 32px;
+  height: 32px;
+}
+a.btnWhats:hover {
+  color: #34391b;
+  background: #e0edc1;
+}
+
+/* End Footer */
+
+.successMessage {
+  padding: 1em;
+  border-radius: 10px;
+  border: 1px solid rgb(16, 63, 4);
+  background-color: rgb(191, 245, 177);
+  color: rgb(16, 63, 4);
+  margin-bottom: 1em;
+}
+
+.failMessage {
+  padding: 1em;
+  border-radius: 10px;
+  border: 1px solid rgb(63, 4, 4);
+  background-color: rgb(240, 200, 187);
+  color: rgb(63, 4, 4);
+  margin-bottom: 1em;
+}
+
+.hideMessage {
+  display: none;
+}
+
+/*
+font-family: 'Epilogue', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Shadows Into Light', cursive;
+*/
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 0 2em;
+  }
+
+  header .top div.social, header .top div.contact {
+    display: none;
+  }
+
+  header .top a.logo {
+    margin-left: 20px;
+  }
+
+  .one,
+  .two,
+  .three {
+      background-color: #34391b;
+      height: 5px;
+      width: 100%;
+      margin: 6px auto;
+
+      transition-duration: 0.3s;
+  }
+  .one {
+    margin: 0 auto 6px auto;
+  }
+
+  .menu-section {
+    border-bottom: 1px solid #34391b;
+  }
+  .menu-section nav {
+    display: none;
+    background-color: transparent;
+  }
+  .menu-section nav a {
+    font-size: 25px;
+  }
+
+  .menu-toggle {
+      display: block;
+      width: 40px;
+      height: 30px;
+      margin-right: 20px;
+  }
+  .menu-section.on {
+    position: fixed;
+    top:0;
+    left:0;
+    
+    width: 100vw;
+    height: 100vh;
+
+    background-color: #e0edc1;
+    
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu-section.on nav, .menu-section.on .logo-mobile {
+      display: block;
+  }
+  .menu-section.on .logo-mobile {
+      margin-bottom: 2em;
+  }
+  .menu-section.on .menu-toggle {
+      position: absolute;
+      right: 10px;
+      top: 45px;
+  }
+  .menu-section.on .menu-toggle .one {
+      transform: rotate(45deg) translate(7px, 7px);
+  }
+  .menu-section.on .menu-toggle .two {
+      opacity: 0;
+  }
+  .menu-section.on .menu-toggle .three {
+      transform: rotate(-45deg) translate(8px, -9px);
+  }
+  .menu-section.on nav.top-menu a {
+      display: block;
+      color: #34391b;
+      margin: 1em 0;
+      text-align: center;
+      width: 100%;
+  }
+  .menu-section.on nav.top-menu a.btn {
+      color: #fff;
+  }
+
+
+  footer .flex {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer div.footer-informations div.flex {
+    align-items: center;
+  }
+
+  footer div.copy {
+    text-align: center;
+  }
+
+  .footer-logo, .footer-menu, .footer-blog, .footer-services {
+    margin-bottom: 1.5em;
+    text-align: center;
+  }
+}

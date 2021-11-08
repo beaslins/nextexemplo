@@ -1,0 +1,46 @@
+.serviceLeft, .serviceRight {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: stretch;
+    align-items: stretch;
+}
+div.description {
+    background-color:#34391b;
+    padding: 3em;
+    color: #fff;
+}
+.type {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+.title {
+    font-size: 30px;
+    font-family: 'Epilogue', sans-serif;
+    margin: 0.7em 0;
+}
+.image img, .imageLeft img {
+    display: block;
+}
+.serviceLeft .imageLeft {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .serviceLeft, .serviceRight {
+        grid-template-columns: 1fr;
+        margin-bottom: 3em;
+    }
+    div.description {
+        padding: 1.5em;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .serviceLeft .imageLeft {
+        display: block;
+    }
+    .serviceLeft .image {
+        display: none;
+    }
+}

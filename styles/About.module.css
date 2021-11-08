@@ -1,0 +1,91 @@
+.about, .philosophy {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.image {
+    width: 35%;
+}
+.text {
+    width: 65%;
+    text-align: justify;
+}
+.text p {
+    margin-bottom: 1em;
+}
+.title {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 35px;
+    font-weight: normal;
+}
+.about {
+    margin: 5em 0 3em 0;
+}
+.about .image {
+    margin-right: 3em;
+}
+.text ul {
+    margin-left: 1em;
+    margin-bottom: 1.5em;
+}
+
+.philosophy {
+    margin-bottom: 2em;
+}
+.philosophy .image {
+    margin-left: 5em;
+}
+.philosophy .text {
+    width: 100%;
+}
+
+.aboutServices {
+    margin: 5em 0;
+}
+.aboutServices h2 {
+    text-align: center;
+}
+.aboutServices .list {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.aboutServices .list .item h3 {
+    margin: 0.5em 0;
+}
+.aboutWunjo div.boxesAbout {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2em;
+    margin-bottom: 5em;
+}
+.aboutWunjo div.boxesAbout div {
+    background-color:#34391b;
+    padding: 3em;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .about, .philosophy {
+        flex-direction: column;
+    }
+    .philosophy {
+        flex-direction: column-reverse;
+    }
+    .image, .text {
+        width: 100%;
+    }
+    .about .image, .philosophy .image {
+        margin-right: 0;
+    }
+
+    .philosophy .image {
+        margin-left: 0;
+    }
+    .aboutWunjo div.boxesAbout {
+        grid-template-columns: 100%;
+    }
+}

@@ -1,0 +1,82 @@
+
+.about {
+  margin: 3em auto;
+  width: 55%;
+  text-align: center;
+}
+.about p + p {
+  margin-top: 1em;
+}
+.aboutTitle {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 40px;
+  margin-bottom: 1em;
+}
+
+.services {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.services .btn {
+  margin-top: 3em;
+}
+.blog {
+  margin: 5em 0
+}
+.blog h2 {
+  text-align: center;
+  margin-bottom: 2em;
+  font-size: 40px;
+}
+.blog .list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 40%);
+  gap: 2em;
+}
+
+.imageHome img {
+  width: 70%;
+  display: block;
+  margin: 2em auto;
+}
+
+a.btn {
+    width: 40%;
+    background-color: transparent;
+    color: #34391b;
+    border: none;
+    cursor: pointer;
+
+    background-image: url(/images/btbgverde.svg);
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+    transition: all 0.3s;
+    margin: 1em auto 0 auto;
+
+}
+
+@media screen and (max-width: 600px) {
+  .imageHome img {
+    width: 100%;
+    margin: 2em auto;
+  }
+
+  .about {
+    margin: 3em auto;
+    width: 100%;
+  }
+
+  .blog .list {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+}

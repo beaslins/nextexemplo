@@ -1,0 +1,80 @@
+.services {
+    margin: 5em 0;
+}
+.services h1 {
+    font-size: 40px;
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.about {
+    text-align: justify;
+    margin: 5em auto;
+}
+.about p + p {
+    margin-top: 1em;
+}
+.about h1 {
+    font-size: 40px;
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.servicePresentation {
+    margin-top: 5em;
+}
+.servicePresentation h2 {
+    font-size: 40px;
+    font-family: 'Epilogue', sans-serif;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.method {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: repeat(2, 1fr);
+}
+.method ul li {
+    list-style: disc;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+.method p {
+    margin-top: 1em;
+}
+
+.servicesBox {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr;
+}
+.servicesBox div {
+    background-color: #34391b;
+    padding: 2em;
+    color: #e0edc1;
+} 
+.type {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+}
+.title {
+    font-size: 30px;
+    font-family: 'Epilogue', sans-serif;
+    margin: 0.7em 0;
+}
+.list {
+    list-style: disc;
+    margin: 1em 0;
+}
+.servicesBox p.description {
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 600px) {
+    .servicesBox {
+        grid-template-columns: 1fr;
+    }
+}

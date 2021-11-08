@@ -1,0 +1,120 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5em 0;
+}
+.image {
+    width: 25%;
+}
+.infos {
+    width: 20%;
+}
+.form {
+    width: 40%;
+    padding-right: 4em;
+}
+
+.infos .title {
+    font-family: 'Epilogue', sans-serif;
+    margin-bottom: 0.5em;
+}
+.infos a {
+    display: block;
+}
+div.social {
+    margin-top: 1em;
+    display: flex;
+}
+div.social svg {
+    width: 25px;
+    height: 25px;
+
+    display: inline-block;
+}
+div.social svg + svg {
+    margin-left: 0.7em;
+}
+
+.form div.inputTopSpace {
+    margin-top: 1em;
+}
+.form label, .form input, .form textarea {
+    display: block;
+}
+.form input, .form textarea {
+    border-bottom: 2px solid #34391b;
+    padding: 0.3em;
+    width: 100%;
+}
+input.btn {
+    width: 40%;
+    background-color: transparent;
+    color: #34391b;
+    border: none;
+    cursor: pointer;
+
+    background-image: url(/images/btbgverde.svg);
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    height: 50px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+
+    transition: all 0.3s;
+    border-bottom: none;
+    margin-top: 2em;
+}
+input.btn:hover {
+    text-decoration: underline;
+}
+a.btnWhats {
+    color: #e0edc1;
+    box-shadow: -3px 3px 11px rgb(41 59 95 / 25%);
+    border-radius: 2em 0 2em 2em;
+    padding: 1em 1.5em;
+    font-weight: 600;
+    background: #34391b;
+    transition: background .4s ease-in,color .4s ease-in;
+    margin-top: 2em;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+a.btnWhats span {
+    display: inline-block;
+    padding-left: 0.5em;
+}
+a.btnWhats svg {
+    width: 32px;
+    height: 32px;
+}
+a.btnWhats:hover {
+    color: #34391b;
+    background: #e0edc1;
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        flex-direction: column;
+    }
+    .image, .infos, .form {
+        width: 100%;
+    }
+    .image {
+        display: none;
+    }
+    .form {
+        padding-right: 0;
+        margin-top: 3em;
+    }
+    .infos, .contact {
+        margin-top: 3em;
+    }
+}
